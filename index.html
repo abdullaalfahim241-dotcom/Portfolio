@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">MY PORTFOLIO</div>
+
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#journey">LEARNING JOURNEY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="home-text">
+            <p class="welcome">WELCOME TO MY WEBSITE</p>
+
+            <h1>Hi, I'm <span>MD ABDULLA AL FAHIM</span></h1>
+
+            <h2>I'm a Web Developer</h2>
+
+            <p>
+                I am a student and beginner web developer.I create modern, beautiful and responsive websites
+                using HTML, CSS and JavaScript.
+            </p>
+
+            <a href="#about" class="btn">MORE ABOUT ME</a>
+        </div>
+
+        <div class="home-image">
+            <img src="abdulla.jpeg" alt="My Profile">
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2 class="title">ABOUT <span>ME</span></h2>
+
+        <div class="about-content">
+
+            <div>
+                <h3>I'm a Web Developer</h3>
+
+                <p>
+                    Hello! My name is MD Abdulla Al Fahim. I am passionate about
+                    web development and creating modern websites.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and building
+                    creative and user-friendly websites.
+                </p>
+
+                <a href="#contact" class="btn">CONTACT ME</a>
+            </div>
+
+            <div class="info">
+                <p><strong>Name:</strong> MD Abdulla Al Fahim</p>
+                <p><strong>Email:</strong> abdullaalfahim241@email.com</p>
+                <p><strong>Phone:</strong> +880 1743724981</p>
+                <p><strong>City:</strong> Cumilla-3500, Bangladesh</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION START -->
+<!-- SKILLS SECTION -->
+<section id="skills" class="skills">
+
+    <h2 class="section-title">
+        MY <span>SKILLS</span>
+    </h2>
+
+    <div class="skills-container">
+
+        <!-- HTML5 -->
+        <div class="skill-box">
+            <h3>HTML5</h3>
+
+            <div class="skill-bar">
+                <div class="skill-progress html">
+                    <span>90%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="skill-box">
+            <h3>CSS3</h3>
+
+            <div class="skill-bar">
+                <div class="skill-progress css">
+                    <span>85%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-box">
+            <h3>JavaScript</h3>
+
+            <div class="skill-bar">
+                <div class="skill-progress javascript">
+                    <span>70%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Responsive Design -->
+        <div class="skill-box">
+            <h3>Responsive Design</h3>
+
+            <div class="skill-bar">
+                <div class="skill-progress responsive">
+                    <span>85%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="skill-box">
+            <h3>UI/UX Design</h3>
+
+            <div class="skill-bar">
+                <div class="skill-progress uiux">
+                    <span>70%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="skill-box">
+            <h3>Git & GitHub</h3>
+
+            <div class="skill-bar">
+                <div class="skill-progress github">
+                    <span>65%</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- SKILLS SECTION END -->
+
+
+    <!-- SERVICES -->
+    <!-- SERVICES -->
+<section id="services" class="section services">
+
+    <h2 class="title">MY <span>SERVICES</span></h2>
+
+    <div class="service-container">
+
+        <!-- 1. Web Design -->
+        <div class="service-box">
+            <div class="icon">💻</div>
+            <h3>Web Design</h3>
+            <p>Modern and attractive website design.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'Web Design',
+                'I create clean, modern and attractive website designs that are easy to use and look professional on all devices.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 2. Web Development -->
+        <div class="service-box">
+            <div class="icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Responsive and functional websites.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'Web Development',
+                'I build fast, responsive and functional websites using modern web technologies such as HTML, CSS and JavaScript.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 3. UI/UX Design -->
+        <div class="service-box">
+            <div class="icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Simple and user-friendly interfaces.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'UI/UX Design',
+                'I design clean, simple and user-friendly interfaces that provide a smooth and enjoyable experience for visitors.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 4. Responsive Design -->
+        <div class="service-box">
+            <div class="icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Websites for mobile, tablet and desktop.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'Responsive Design',
+                'I make websites that automatically adjust to mobile phones, tablets, laptops and desktop screens.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 5. E-Commerce Website -->
+        <div class="service-box">
+            <div class="icon">🛒</div>
+            <h3>E-Commerce Website</h3>
+            <p>Professional online shopping websites.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'E-Commerce Website',
+                'I create professional online shopping websites with attractive layouts and user-friendly product sections.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 6. Website Optimization -->
+        <div class="service-box">
+            <div class="icon">⚡</div>
+            <h3>Website Optimization</h3>
+            <p>Improve speed and performance.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'Website Optimization',
+                'I improve website speed, performance and overall user experience to make websites faster and smoother.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 7. Website Maintenance -->
+        <div class="service-box">
+            <div class="icon">🔧</div>
+            <h3>Website Maintenance</h3>
+            <p>Updates, fixes and regular maintenance.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'Website Maintenance',
+                'I provide website updates, bug fixes, content changes and regular maintenance to keep websites working properly.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 8. SEO Optimization -->
+        <div class="service-box">
+            <div class="icon">📈</div>
+            <h3>SEO Optimization</h3>
+            <p>Improve search engine visibility.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'SEO Optimization',
+                'I help improve website structure and content so that search engines can better understand and discover the website.'
+                )">
+                View Details
+            </button>
+        </div>
+
+
+        <!-- 9. Website Security -->
+        <div class="service-box">
+            <div class="icon">🔒</div>
+            <h3>Website Security</h3>
+            <p>Safe and protected websites.</p>
+
+            <button class="details-btn"
+                onclick="showDetails(
+                'Website Security',
+                'I help improve website security and protect websites from common security problems and vulnerabilities.'
+                )">
+                View Details
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DETAILS POPUP -->
+
+<div id="detailsModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeDetails()">&times;</span>
+
+        <h2 id="modalTitle">Service Details</h2>
+
+        <p id="modalDescription"></p>
+
+        <button class="btn" onclick="closeDetails()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+</section>
+<!-- SERVICE DETAILS POPUP -->
+
+<div id="serviceModal" class="service-modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeService()">&times;</span>
+
+        <h2 id="serviceTitle">Service</h2>
+
+        <p id="serviceDescription">
+            Service details will appear here.
+        </p>
+
+        <a href="#contact" onclick="closeService()" class="btn">
+            CONTACT ME
+        </a>
+
+    </div>
+
+</div>
+
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+
+    <h2 class="title">MY <span>PORTFOLIO</span></h2>
+
+    <div class="portfolio-container">
+
+        <!-- Project 1 -->
+        <div class="project">
+            <h3>Personal Website</h3>
+            <p>A modern personal portfolio website.</p>
+
+            <a href="https://example.com"
+               target="_blank"
+               class="project-btn">
+               View Project
+            </a>
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="project">
+            <h3>Business Website</h3>
+            <p>A professional website for a business.</p>
+
+            <a href="https://example.com"
+               target="_blank"
+               class="project-btn">
+               View Project
+            </a>
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="project">
+            <h3>Landing Page</h3>
+            <p>A responsive and attractive landing page.</p>
+
+            <a href="https://example.com"
+               target="_blank"
+               class="project-btn">
+               View Project
+            </a>
+        </div>
+
+
+        <!-- Project 4 -->
+        <div class="project">
+            <h3>E-commerce Website</h3>
+            <p>A modern online shopping website.</p>
+
+            <a href="https://example.com"
+               target="_blank"
+               class="project-btn">
+               View Project
+            </a>
+        </div>
+
+
+        <!-- Project 5 -->
+        <div class="project">
+            <h3>Restaurant Website</h3>
+            <p>A modern and attractive restaurant website.</p>
+
+            <a href="https://example.com"
+               target="_blank"
+               class="project-btn">
+               View Project
+            </a>
+        </div>
+
+
+        <!-- Project 6 -->
+        <div class="project">
+            <h3>School Website</h3>
+            <p>A responsive website for a school or institution.</p>
+
+            <a href="https://example.com"
+               target="_blank"
+               class="project-btn">
+               View Project
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LEARNING JOURNEY SECTION -->
+<section id="journey" class="learning-journey">
+
+    <h2 class="section-title">
+        MY <span>LEARNING JOURNEY</span>
+    </h2>
+
+    <div class="journey-container">
+
+        <!-- Learning Box -->
+        <div class="journey-box">
+
+            <h3>Web Development Student</h3>
+
+            <span class="journey-date">
+                My Learning Journey
+            </span>
+
+            <p>
+                I am a student and a passionate web development learner.
+                I am continuously learning and improving my skills by building
+                modern, responsive, and user-friendly websites.
+            </p>
+
+            <h4>What I Am Learning</h4>
+
+            <ul>
+                <li>HTML5 – Building website structure</li>
+                <li>CSS3 – Creating modern website designs</li>
+                <li>JavaScript – Adding interactive features</li>
+                <li>Responsive Web Design</li>
+                <li>UI/UX Design Basics</li>
+                <li>Git & GitHub</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Practice Box -->
+        <div class="journey-box">
+
+            <h3>Projects & Practice</h3>
+
+            <span class="journey-date">
+                Learning Through Practice
+            </span>
+
+            <p>
+                I believe that practical projects are one of the best ways
+                to improve my web development skills. I regularly practice
+                by creating different types of websites and personal projects.
+            </p>
+
+            <h4>What I Have Practiced</h4>
+
+            <ul>
+                <li>Personal Portfolio Website</li>
+                <li>Business Website Design</li>
+                <li>Landing Page Development</li>
+                <li>Responsive Website Layout</li>
+                <li>Contact Form Design</li>
+                <li>Modern UI Design Practice</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- LEARNING JOURNEY SECTION END -->
+
+
+
+    <!-- CONTACT -->
+    <!-- CONTACT SECTION START -->
+<section id="contact" class="section contact">
+
+    <h2 class="title">
+        CONTACT <span>ME</span>
+    </h2>
+
+    <div class="contact-container">
+
+        <!-- =========================
+             LEFT SIDE - CONTACT INFO
+        ========================== -->
+        <div class="contact-info">
+
+            <h3>Let's Talk</h3>
+
+            <p class="contact-text">
+                Have a project in mind? Feel free to contact me.
+                I would love to hear about your idea!
+            </p>
+
+            <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div>
+                    <h4>Email</h4>
+                    <p>abdullaalfahim241@email.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">📱</div>
+                <div>
+                    <h4>Phone / WhatsApp</h4>
+                    <p>+880 1743724981</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div>
+                    <h4>Location</h4>
+                    <p>Cumilla-3500, Bangladesh</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             RIGHT SIDE - CONTACT FORM
+        ========================== -->
+        <form 
+    class="contact-form"
+    action="https://formsubmit.co/abdullaalfahim241@gmail.com"
+    method="POST"
+>
+<input type="hidden" name="_subject" value="New Project Message">
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <!-- Email subject -->
+    <input 
+        type="hidden" 
+        name="_subject" 
+        value="New Project Message from Portfolio Website"
+    >
+
+    <!-- Disable captcha -->
+    <input 
+        type="hidden" 
+        name="_captcha" 
+        value="false"
+    >
+
+    <!-- Success message/page -->
+    <input 
+        type="hidden" 
+        name="_next" 
+        value="thankyou.html"
+    >
+
+    <!-- Name -->
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <!-- Email -->
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
+
+    <!-- Project Name -->
+    <input
+        type="text"
+        name="project_name"
+        placeholder="Project Name"
+        required
+    >
+
+    <!-- Project Type -->
+    <select name="project_type" required>
+        <option value="">Select Project Type</option>
+        <option value="Website Development">
+            Website Development
+        </option>
+        <option value="Portfolio Website">
+            Portfolio Website
+        </option>
+        <option value="E-commerce Website">
+            E-commerce Website
+        </option>
+        <option value="Landing Page">
+            Landing Page
+        </option>
+        <option value="Blog Website">
+            Blog Website
+        </option>
+        <option value="Other">
+            Other
+        </option>
+    </select>
+
+    <!-- Budget -->
+    <input
+        type="text"
+        name="budget"
+        placeholder="Your Budget (Optional)"
+    >
+
+    <!-- Deadline -->
+    <input
+        type="date"
+        name="deadline"
+    >
+
+    <!-- Facebook -->
+    <input
+        type="url"
+        name="facebook"
+        placeholder="Facebook Profile Link (Optional)"
+    >
+
+    <!-- WhatsApp -->
+    <input
+        type="tel"
+        name="whatsapp"
+        placeholder="WhatsApp Number"
+    >
+
+    <!-- Subject -->
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required
+    >
+
+    <!-- Project Description -->
+    <textarea
+        name="message"
+        placeholder="Describe Your Project"
+        required
+    ></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">
+        SEND MESSAGE
+    </button>
+
+</form>
+
+    </div>
+
+</section>
+<!-- CONTACT SECTION END -->
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

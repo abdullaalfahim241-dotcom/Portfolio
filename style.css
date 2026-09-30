@@ -1,0 +1,1895 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e63946;
+}
+
+
+/* HOME */
+
+.home {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 30px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-text {
+    width: 55%;
+}
+
+.welcome {
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home-text h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.home-text h1 span {
+    color: #e63946;
+}
+
+.home-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b91c2b;
+}
+
+
+/* HOME IMAGE */
+
+.home-image {
+    width: 40%;
+    text-align: center;
+}
+
+.home-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 6px solid #e63946;
+}
+
+
+/* ALL SECTIONS */
+
+.section {
+    max-width: 1200px;
+    min-height: 600px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.title span {
+    color: #e63946;
+}
+
+
+/* ABOUT */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.about-content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.info {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.info p {
+    margin-bottom: 15px;
+}
+
+
+/* SERVICES */
+
+.services {
+    max-width: 100%;
+    background: #fafafa;
+}
+
+.service-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.service-box {
+    background: white;
+    padding: 40px 25px;
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    line-height: 1.6;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project {
+    padding: 35px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+.project h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.project p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    color: #e63946;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* CONTACT */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #e63946;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    nav {
+        height: auto;
+        padding: 20px;
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .home-image {
+        width: 100%;
+    }
+
+    .home-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .about-content,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-container,
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+}
+/* SERVICE BUTTON */
+
+.service-box button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    border: none;
+    background: #e63946;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.service-box button:hover {
+    background: #b91c2b;
+}
+
+
+/* SERVICE POPUP */
+
+.service-modal {
+    display: none;
+
+    position: fixed;
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+
+    width: 90%;
+    max-width: 550px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    animation: popup 0.3s ease;
+}
+
+.modal-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    color: #e63946;
+}
+
+.modal-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+
+    right: 20px;
+    top: 10px;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    color: #222;
+}
+
+.close:hover {
+    color: #e63946;
+}
+
+@keyframes popup {
+
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* VIEW DETAILS BUTTON */
+
+.details-btn {
+    background: #e63946;
+    color: white;
+
+    border: none;
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background: #b91c2b;
+    transform: translateY(-2px);
+}
+
+
+/* DETAILS POPUP */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* POPUP BOX */
+
+.modal-content {
+    position: relative;
+
+    width: 90%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+    animation: popup 0.3s ease;
+}
+
+
+/* POPUP TITLE */
+
+.modal-content h2 {
+    color: #e63946;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+/* POPUP TEXT */
+
+.modal-content p {
+    color: #444;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* CLOSE X */
+
+.close {
+    position: absolute;
+
+    right: 20px;
+    top: 10px;
+
+    font-size: 35px;
+
+    color: #555;
+
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e63946;
+}
+
+
+/* POPUP ANIMATION */
+
+@keyframes popup {
+
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+.contact-container form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+}
+
+.contact-container form select:focus {
+    border-color: #c0392b;
+}
+/* =========================
+   CONTACT SECTION - COMPACT DESIGN
+========================= */
+
+.contact {
+    padding: 70px 20px;
+}
+
+.contact .title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Main Contact Layout */
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 35px;
+    align-items: start;
+}
+
+/* Left Side Contact Info */
+.contact-info {
+    padding: 25px;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT FORM BOX
+========================= */
+
+.contact-container form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+    /* Form যেন খুব বেশি বড় না হয় */
+    max-height: 720px;
+    overflow-y: auto;
+}
+
+
+/* All Inputs */
+.contact-container form input,
+.contact-container form select,
+.contact-container form textarea {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 12px;
+
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+
+    font-size: 14px;
+    outline: none;
+
+    background: #ffffff;
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+
+/* Textarea Size */
+.contact-container form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+/* Input Focus */
+.contact-container form input:focus,
+.contact-container form select:focus,
+.contact-container form textarea:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+}
+
+
+/* Submit Button */
+.contact-container form .btn {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #c0392b;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.contact-container form .btn:hover {
+    background: #a93226;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 50px 15px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info {
+        padding: 10px;
+    }
+
+    .contact-container form {
+        padding: 20px;
+        max-height: none;
+    }
+
+}
+/* =========================
+   CONTACT INFO CARD DESIGN
+========================= */
+
+.contact-info {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 20px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    position: relative;
+    overflow: hidden;
+}
+
+/* উপরের ডিজাইন লাইন */
+.contact-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #c0392b;
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.contact-info h3::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #c0392b;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.contact-info > p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* Contact Details */
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+/* Hover করলে সুন্দর effect */
+.contact-info .info-item:hover {
+    transform: translateX(8px);
+    background: #fff5f4;
+}
+
+/* Icon */
+.contact-info .info-item i,
+.contact-info .info-item span:first-child {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #c0392b;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/* লেখা */
+.contact-info .info-item p {
+    margin: 0;
+    color: #444;
+    font-size: 15px;
+}
+
+
+/* পুরো Contact Section একটু সুন্দর */
+.contact-container {
+    align-items: stretch;
+}
+/* ================================
+   NEW CONTACT SECTION DESIGN
+================================ */
+
+.contact {
+    padding: 80px 8%;
+    background: #f8f8f8;
+}
+
+.contact .title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 38px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* LEFT SIDE - LET'S TALK */
+
+.contact-info {
+    background: #ffffff;
+    padding: 45px 35px;
+    border-radius: 15px;
+    border-top: 5px solid #c0392b;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.contact-info h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.contact-info h3::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #c0392b;
+    margin-top: 12px;
+}
+
+.contact-info p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* CONTACT DETAILS */
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: #444;
+}
+
+.contact-info .info-item i,
+.contact-info .info-item span {
+    width: 45px;
+    height: 45px;
+    background: #c0392b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RIGHT SIDE - FORM */
+
+.contact-container form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* INPUT + SELECT */
+
+.contact-container form input,
+.contact-container form select,
+.contact-container form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.contact-container form textarea {
+    height: 110px;
+    resize: none;
+}
+
+.contact-container form input:focus,
+.contact-container form select:focus,
+.contact-container form textarea:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 0 3px rgba(192,57,43,0.1);
+}
+
+/* BUTTON */
+
+.contact-container form .btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #c0392b;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-container form .btn:hover {
+    background: #962d22;
+    transform: translateY(-2px);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact {
+        padding: 60px 5%;
+    }
+
+    .contact-info {
+        padding: 30px 25px;
+    }
+
+    .contact-info h3 {
+        font-size: 27px;
+    }
+
+    .contact .title {
+        font-size: 30px;
+    }
+}
+/* ===== FINAL CONTACT SIDE BY SIDE DESIGN ===== */
+
+.contact-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* LEFT SIDE - LET'S TALK */
+
+.contact-info {
+    width: 35% !important;
+    flex: 0 0 35% !important;
+
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    border-top: 4px solid #c0392b;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-info h3::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #c0392b;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* EMAIL - PHONE - LOCATION */
+
+.contact-info p:not(:first-of-type) {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    border-left: 3px solid #c0392b;
+}
+
+
+/* RIGHT SIDE - FORM */
+
+.contact-container form {
+    width: 65% !important;
+    flex: 1 !important;
+
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 4px solid #c0392b;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+
+/* FORM INPUT DESIGN */
+
+.contact-container form input,
+.contact-container form select,
+.contact-container form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 15px;
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.contact-container form input:focus,
+.contact-container form select:focus,
+.contact-container form textarea:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 0 3px rgba(192,57,43,0.1);
+}
+
+
+/* MESSAGE BOX */
+
+.contact-container form textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+
+/* SEND BUTTON */
+
+.contact-container form .btn {
+    width: 100%;
+    padding: 14px;
+
+    background: #c0392b;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-container form .btn:hover {
+    background: #962d22;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column !important;
+    }
+
+    .contact-info,
+    .contact-container form {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
+/* ===== CONTACT SECTION SIDE BY SIDE ===== */
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+/* Left Side - Let's Talk */
+.contact-info {
+    width: 40%;
+    flex: 0 0 40%;
+}
+
+/* Right Side - Contact Form */
+.contact-container form {
+    width: 60%;
+    flex: 0 0 60%;
+}
+
+/* Form Inputs */
+.contact-container form input,
+.contact-container form select,
+.contact-container form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .contact-info,
+    .contact-container form {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}
+/* ========================================
+   CONTACT SECTION
+======================================== */
+
+.contact {
+    padding: 80px 10%;
+}
+
+.contact .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact .title span {
+    color: #c0392b;
+}
+
+
+/* MAIN CONTAINER */
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.contact-info {
+    flex: 1;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-text {
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+
+/* INFO ITEMS */
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #c0392b;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.info-item h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.info-item p {
+    margin: 0;
+    color: #666;
+}
+
+
+/* =========================
+   RIGHT SIDE FORM
+========================= */
+
+.contact-form {
+    flex: 1.4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    padding: 35px;
+
+    background: #ffffff;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* INPUT */
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 15px;
+    outline: none;
+
+    font-family: inherit;
+}
+
+
+/* FULL WIDTH ITEMS */
+
+.contact-form select,
+.contact-form input[name="project_name"],
+.contact-form input[name="budget"],
+.contact-form input[name="deadline"],
+.contact-form input[name="facebook"],
+.contact-form input[name="whatsapp"],
+.contact-form input[name="subject"],
+.contact-form textarea,
+.contact-form button {
+    grid-column: span 2;
+}
+
+
+/* FOCUS */
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 5px rgba(192, 57, 43, 0.2);
+}
+
+
+/* TEXTAREA */
+
+.contact-form textarea {
+    height: 130px;
+    resize: none;
+}
+
+
+/* BUTTON */
+
+.contact-form button {
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #c0392b;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #a93226;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact {
+        padding: 60px 5%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea,
+    .contact-form button {
+        grid-column: span 1;
+    }
+
+}
+/* ===== CONTACT LEFT SIDE WIDTH FIX ===== */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Left side */
+.contact-info {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Email/Phone text যেন কাটা না যায় */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-item p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Right side form */
+.contact-container form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* মোবাইলে আবার নিচে নিচে চলে যাবে */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Contact left box একটু চওড়া করার জন্য */
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+}
+
+.contact-info {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.contact-form {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+/* Email এবং অন্যান্য লেখা যেন জায়গা পায় */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.info-item p {
+    white-space: nowrap;
+}
+
+/* Mobile এ নিচে নিচে যাবে */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: 0 0 62%;
+        max-width: 62%;
+        width: 62%;
+    }
+
+    .info-item p {
+        white-space: normal;
+    }
+}
+/* ===== CONTACT BOX WIDTH FIX ===== */
+
+.contact-container {
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+}
+
+/* বাম পাশের বক্স আরও চওড়া */
+.contact-info {
+    width: 52%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+/* ডান পাশের Form */
+.contact-form {
+    width: calc(48% - 25px);
+    box-sizing: border-box;
+}
+
+/* Email, Phone, Location এক লাইনে রাখার জন্য */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+}
+
+.info-item p {
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .info-item p {
+        white-space: normal;
+    }
+}
+.contact-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1.5fr !important;
+    gap: 30px !important;
+    width: 100% !important;
+    align-items: start;
+}
+
+.contact-info {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.contact-form {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-item p {
+    white-space: nowrap !important;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .info-item p {
+        white-space: normal !important;
+    }
+}
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills {
+    padding: 100px 10%;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 50px auto 0;
+}
+
+.skill-box {
+    margin-bottom: 30px;
+}
+
+.skill-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #b74b4b;
+    border-radius: 20px;
+    position: relative;
+}
+
+.skill-progress span {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-progress.html {
+    width: 95%;
+}
+
+.skill-progress.css {
+    width: 92%;
+}
+
+.skill-progress.javascript {
+    width: 89%;
+}
+
+.skill-progress.responsive {
+    width: 85%;
+}
+.skill-progress.uiux {
+    width: 86%;
+}
+
+.skill-progress.github {
+    width: 80%;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .skills {
+        padding: 70px 20px;
+    }
+
+    .skills-container {
+        margin-top: 35px;
+    }
+
+}
+/* =========================
+   LEARNING JOURNEY SECTION
+========================= */
+
+.learning-journey {
+    padding: 100px 10%;
+}
+
+.journey-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+.journey-box {
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.journey-box:hover {
+    transform: translateY(-5px);
+}
+
+.journey-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.journey-date {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.journey-box p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.journey-box h4 {
+    margin-bottom: 15px;
+}
+
+.journey-box ul {
+    padding-left: 20px;
+}
+
+.journey-box li {
+    margin-bottom: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .learning-journey {
+        padding: 70px 20px;
+    }
+
+    .journey-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================
+   LEARNING JOURNEY
+   PROFESSIONAL TEXT COLORS
+========================= */
+
+.learning-journey .journey-box h3 {
+    color: #2f3542;
+    font-weight: 700;
+}
+
+.learning-journey .journey-date {
+    color: #b84f4f;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.learning-journey .journey-box p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.learning-journey .journey-box h4 {
+    color: #b84f4f;
+    font-weight: 700;
+    border-left: 4px solid #b84f4f;
+    padding-left: 10px;
+}
+
+.learning-journey .journey-box li {
+    color: #555;
+    line-height: 1.7;
+}
+
+.learning-journey .journey-box li::marker {
+    color: #b84f4f;
+}
+
+.learning-journey .section-title {
+    color: #2f3542;
+}
+
+.learning-journey .section-title span {
+    color: #b84f4f;
+}
+
+/* Box-এর border একটু সুন্দর */
+.learning-journey .journey-box {
+    border: 1px solid #e2e2e2;
+    transition: 0.3s ease;
+}
+
+.learning-journey .journey-box:hover {
+    border-color: #b84f4f;
+}
+/* =================================
+   FINAL CONTACT BOX FIX
+================================= */
+
+.contact-container {
+    display: grid !important;
+    grid-template-columns: 1.1fr 1.4fr !important;
+    gap: 30px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    align-items: stretch !important;
+}
+
+/* LEFT - LET'S TALK BOX */
+.contact-info {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 35px 30px !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+}
+
+/* EMAIL / PHONE / LOCATION */
+.contact-info .info-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.contact-info .info-item p {
+    flex: 1 !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+
+    /* লেখা যেন বক্সের বাইরে না যায় */
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+/* Icon যেন ছোট না হয়ে যায় */
+.contact-info .info-item i,
+.contact-info .info-item span,
+.info-icon {
+    flex-shrink: 0 !important;
+}
+
+/* RIGHT - FORM */
+.contact-container form,
+.contact-form {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        margin: 30px auto !important;
+    }
+
+    .contact-info,
+    .contact-container form,
+    .contact-form {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact-info {
+        padding: 30px 25px !important;
+    }
+}
